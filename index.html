@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Hikma!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- INTRO PAGE -->
+    <div class="intro" id="intro">
+        <div id="audio-prompt">
+            <button onclick="playMusic()">Play Music 🎶</button>
+        </div>
+        <h1>Happy Birthday, My Love! 🎉</h1>
+        <p>Wishing you a day filled with love, laughter, and all the happiness you bring into my life. You are truly special to me, my biggie biggie Star!</p>
+        <button class="start-btn" onclick="startCelebration()">Click to Celebrate 🎂</button>
+        <audio id="birthday-music" loop>
+            <source src="music/happy-birthday.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <div class="content" id="content">
+        <div class="slideshow"></div>
+        <audio id="bruno-mars-music" loop>
+            <source src="music/bruno-mars-die-with-a-smile.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
